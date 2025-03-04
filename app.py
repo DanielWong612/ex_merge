@@ -10,7 +10,7 @@ def get_todos():
     return jsonify(todos), 200
 
 @app.route('/todos', methods=['POST'])
-def add_todo():
+def add_item():
     todo = request.json
     todos.append(todo)
     return jsonify(todo), 201
